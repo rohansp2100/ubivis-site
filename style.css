@@ -1,16 +1,51 @@
 /* RESET */
 * {
   box-sizing: border-box;
-  margin: 0;
-  padding: 0;
 }
 
 /* BASE */
 body {
+  margin: 0;
   font-family: Arial, Helvetica, sans-serif;
-  color: #222;
   background: #ffffff;
-  line-height: 1.6;
+  color: #111;
+}
+
+/* LAYOUT */
+.container {
+  min-height: 92vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+}
+
+/* LOGO */
+.logo {
+  width: 100%;
+  max-width: 360px;
+  height: auto;
+  margin-bottom: 25px;
+}
+
+/* STATUS TEXT */
+.status {
+  font-size: 1.8rem;
+  margin-bottom: 30px;
+  color: #444;
+}
+
+/* CONTACT */
+.contact h2 {
+  margin-bottom: 10px;
+  font-size: 1.1rem;
+}
+
+.contact p {
+  margin: 8px 0;
+  font-size: 0.95rem;
 }
 
 /* LINKS */
@@ -23,84 +58,34 @@ a:hover {
   text-decoration: underline;
 }
 
-/* HEADER */
-.header {
-  padding: 60px 20px;
-  text-align: center;
-  background: #0f172a;
-  color: #ffffff;
-}
-
-.header h1 {
-  font-size: 2rem;
-  margin-bottom: 10px;
-}
-
-.tagline {
-  font-size: 1rem;
-  opacity: 0.9;
-}
-
-/* SECTIONS */
-.section {
-  max-width: 960px;
-  margin: auto;
-  padding: 40px 20px;
-}
-
-.section.light {
-  background: #f4f6f8;
-}
-
-.section h2 {
-  font-size: 1.5rem;
-  margin-bottom: 16px;
-}
-
-.section p {
-  font-size: 1rem;
-  margin-bottom: 10px;
-}
-
-.section ul {
-  padding-left: 18px;
-}
-
-.section ul li {
-  margin-bottom: 10px;
-}
-
 /* FOOTER */
 .footer {
+  margin-top: 0.2rem;
+  font-size: 0.8rem;
+  color: #fff;
+  padding: 1rem;
   text-align: center;
-  padding: 25px 15px;
-  background: #0f172a;
-  color: #ffffff;
-  font-size: 0.85rem;
+  background-color: #000;
 }
 
 /* =========================
    TABLET (≥ 768px)
    ========================= */
 @media (min-width: 768px) {
-  .header {
-    padding: 80px 20px;
+  .logo {
+    max-width: 420px;
   }
 
-  .header h1 {
-    font-size: 2.6rem;
+  .status {
+    font-size: 2.2rem;
   }
 
-  .tagline {
-    font-size: 1.1rem;
+  .contact h2 {
+    font-size: 1.2rem;
   }
 
-  .section {
-    padding: 60px 30px;
-  }
-
-  .section h2 {
-    font-size: 1.8rem;
+  .contact p {
+    font-size: 1rem;
   }
 }
 
@@ -108,16 +93,19 @@ a:hover {
    DESKTOP (≥ 1024px)
    ========================= */
 @media (min-width: 1024px) {
-  .header h1 {
-    font-size: 3rem;
+  .logo {
+    max-width: 480px;
   }
 
-  .tagline {
-    font-size: 1.2rem;
+  .status {
+    font-size: 2.6rem;
   }
 
-  .section p,
-  .section ul li {
+  .contact h2 {
+    font-size: 1.3rem;
+  }
+
+  .contact p {
     font-size: 1.05rem;
   }
 }
