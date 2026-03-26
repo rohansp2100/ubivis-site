@@ -2,7 +2,7 @@
   --primary-dark: #0a0e27;
   --primary-darker: #05070f;
   --secondary-dark: #1a1f3a;
-  --accent-cyan: #00d9ff; 
+  --accent-cyan: #00d9ff;
   --accent-blue: #0080ff;
   --accent-violet: #7c3aed;
   --text-primary: #ffffff;
@@ -78,6 +78,15 @@ textarea {
   font-family: inherit;
 }
 
+.card-icon i {
+  font-size: 32px;
+  color: var(--accent-cyan);
+}
+
+.solution-card:hover .card-icon i {
+  transform: scale(1.2);
+  transition: 0.3s;
+}
 /* ============ NAVBAR ============ */
 .navbar {
   position: fixed;
@@ -770,6 +779,11 @@ textarea {
   background-clip: text;
 }
 
+.about-text {
+  padding: 1rem;
+  border-radius: 30px;
+}
+
 .about-section-1 .about-text {
   max-width: 720px;
   margin: 0 auto;
@@ -963,6 +977,16 @@ textarea {
   font-weight: 700;
   margin-bottom: calc(var(--spacing-unit) * 1.5);
   line-height: 80px;
+}
+
+.expertise-icon i {
+  font-size: 30px;
+  color: #93c572; /* pistachio theme */
+}
+
+.expertise-item:hover .expertise-icon i {
+  transform: scale(1.05);
+  transition: 0.3s ease;
 }
 
 .expertise-item h3 {
@@ -1882,4 +1906,3 @@ textarea {
     width: 100%;
   }
 }
-
